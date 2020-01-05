@@ -1,0 +1,8 @@
+applications:
+- name:      goldenjubilants
+  random-route: true
+  host:      goldenjubilants
+  memory:    1024M
+  domain:    eu-gb.mybluemix.net
+  command:   node app.js
+  instances: 1

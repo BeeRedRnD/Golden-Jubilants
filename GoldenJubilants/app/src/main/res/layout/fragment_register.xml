@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="@dimen/logo_width"
+                android:layout_height="@dimen/logo_height"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Golden Jubilants"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/img_logo"
+                android:id="@+id/title_text"
+                android:layout_centerHorizontal="true"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_text"
+                android:layout_marginTop="@dimen/child_margin_top"
+                >
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_person"
+                    android:hint="Name"
+                    android:inputType="text"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ti_name"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_email"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ti_email"
+                android:layout_marginTop="@dimen/child_margin_top"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@android:color/white">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_county"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ti_password"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_county"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_person"
+                    android:hint="e.g. I live in Dublin"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_preference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select your preference"
+                android:layout_marginTop="@dimen/child_margin_top"
+                android:layout_below="@+id/ti_county"
+                android:textSize="20dp"
+                />
+            
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_provider"
+                android:text="Provide Services"
+                android:layout_marginTop="@dimen/cardview_default_elevation"
+                android:layout_below="@+id/tv_preference"
+                />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_reciever"
+                android:text="Receive Services"
+                android:layout_marginTop="@dimen/cardview_default_elevation"
+                android:layout_below="@+id/cb_provider"
+                />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_both"
+                android:text="Both"
+                android:layout_marginTop="@dimen/cardview_default_elevation"
+                android:layout_below="@+id/cb_reciever"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_frequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frequency"
+                android:layout_marginTop="@dimen/child_margin_top"
+                android:layout_below="@+id/cb_both"
+                android:textSize="20dp"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_group"
+                android:layout_below="@id/tv_frequency">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weekly"
+                android:id="@+id/rb_weekly"
+                android:layout_marginTop="@dimen/cardview_default_elevation"
+                />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Every fortnight"
+                android:id="@+id/rb_fortnight"
+                android:layout_marginTop="@dimen/cardview_default_elevation"
+                />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monthly"
+                android:id="@+id/rb_monthly"
+                android:layout_marginTop="@dimen/cardview_default_elevation"
+               />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/tv_interested_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interested in"
+                android:layout_marginTop="@dimen/child_margin_top"
+                android:layout_below="@+id/rb_group"
+                android:textSize="20dp"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_list_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_interested_in"
+                android:layout_marginTop="@dimen/child_margin_top"
+                >
+
+                <EditText
+                    android:id="@+id/et_list_skills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_person"
+                    android:hint="Teaching, Gardening"
+                    android:inputType="textMultiLine"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ti_list_skills"
+                android:layout_marginTop="@dimen/button_margin"
+                android:drawableRight="@drawable/ic_arrow_forward"
+                android:paddingLeft="@dimen/button_padding"
+                android:text="Register" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_register"
+                android:padding="@dimen/button_margin"
+                android:text="Already Registered ? Login Now !"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/button_margin"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

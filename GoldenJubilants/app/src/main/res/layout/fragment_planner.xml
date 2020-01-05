@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.learn2crack.fragments.PlannerFragment"
+    android:id="@+id/planner">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/plus_icon"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plus_icon" />
+
+    <TextView
+        android:id="@+id/add_new_task_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plus_icon"
+      android:textAlignment="center"
+        android:text="Add New Exciting Task"
+        android:textAppearance="@style/MyTabTextAppearance"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/add_new_task_caption">
+    </LinearLayout>
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/list_todo"-->
+        <!--android:layout_below="@id/just_text"/>-->
+
+    <!--<item-->
+        <!--android:id="@id/action_add_task"-->
+        <!--android:icon="@android:drawable/ic_menu_add"-->
+        <!--android:title="Add Task"/>-->
+
+</RelativeLayout>

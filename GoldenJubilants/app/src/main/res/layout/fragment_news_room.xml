@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.learn2crack.fragments.NewsRoomFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enjoy Latest News from your local community or from all over Ireland or the entire globe!"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/text_description"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/community_news"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/text_description"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/community_news" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Community News"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/community_news"
+            android:id="@+id/community_news_caption"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/irish_news"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/community_news_caption"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/irish_news" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Irish News"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/irish_news"
+            android:id="@+id/irish_news_caption"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/world_news"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/irish_news_caption"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/world_news_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="World News"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/world_news"
+            android:id="@+id/world_news_caption"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</FrameLayout>

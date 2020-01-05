@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:id="@+id/tv_testimonials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="John's Success Story"
+        android:textAppearance="@style/MyTabTextAppearance"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_testimonial2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="John is 63 years old active man from Corbally."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"/>
+
+
+    <TextView
+        android:id="@+id/tv_testimonial3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="He has helped 27 older people with his various skills."/>
+
+    <TextView
+        android:id="@+id/tv_testimonial4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="He says that he feels more happy and integrated with the commmunity. Listen to him in the video below."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/tv_testimonial4"/>
+
+    <TextView
+        android:id="@+id/tv_testimonial5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="John's Story"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@id/videoView2"
+        android:textSize="20dp"
+        />
+
+
+
+
+
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/testimonaials_list">-->
+
+
+    <!--</ListView>-->
+
+
+
+
+    <!--<VideoView-->
+        <!--android:id="@+id/videoView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+</LinearLayout>

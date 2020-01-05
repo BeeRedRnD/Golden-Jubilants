@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_page"
+    android:layout_centerHorizontal="true"
+    >
+
+
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="HOME PAGE"-->
+        <!--android:id="@+id/awi_text"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="PRESS ME"-->
+        <!--android:id="@+id/press_me"/>-->
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/logo_height"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Golden Jubilants"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/img_logo"
+        android:id="@+id/title_text"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"/>
+
+
+
+
+    <android.support.design.widget.TabLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/tab_id"
+        style="@style/MyTabLayout"
+        />
+
+        <!--<android.support.design.widget.TabItem-->
+            <!--android:text="HOME"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+        <!--<android.support.design.widget.TabItem-->
+            <!--android:text="OPPORTUNITIES"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+    <!--</android.support.design.widget.TabLayout>-->
+
+    <FrameLayout
+        android:id="@+id/simpleFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tab_id"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        />
+
+
+
+
+</LinearLayout>

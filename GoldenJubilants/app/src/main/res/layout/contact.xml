@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/relative_layout_background">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="CONTACT OPTIONS"
+    android:textSize="30dp"
+    android:textAlignment="center"
+    android:id="@+id/text_contact_options"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/table_icons"
+        android:layout_below="@+id/text_contact_options">
+        <TableRow
+            android:id="@+id/icons_row"
+            android:layout_width="match_parent"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:id="@+id/btn_call"
+                android:layout_width="139dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center"
+                android:padding="0dip"
+                android:src="@drawable/call" />
+
+            <ImageView
+                android:id="@+id/btn_message"
+                android:layout_width="128dp"
+                android:layout_height="79dp"
+                android:layout_gravity="left"
+                android:adjustViewBounds="false"
+                android:padding="0dip"
+                android:src="@drawable/message" />
+
+            <ImageView
+                android:id="@+id/btn_email"
+                android:layout_width="137dp"
+                android:layout_height="81dp"
+                android:padding="0dip"
+                android:src="@drawable/mail" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Call"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center" />
+            <TextView android:text="Message"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"/>
+            <TextView android:text="Email"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/table_icons"
+        android:id="@+id/or_text"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/btn_cancel"
+        android:layout_width="137dp"
+        android:layout_height="81dp"
+        android:padding="0dip"
+        android:src="@drawable/cancel_image"
+        android:layout_below="@+id/or_text"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView android:text="Cancel"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_cancel"/>
+
+
+
+
+</RelativeLayout>
